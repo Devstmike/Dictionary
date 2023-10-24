@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+
+}
+
+
+:root {
+    --bg-body : rgb(151, 115, 151);
+    --bg-section : white;
+    --font-lato: 'Lato', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bg-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-roboto);
+}
+
+section{
+    background-color: var(--bg-section);
+    width: 500px;
+    /* height: 350px; */
+    border-radius: 10px;
+    padding: 70px 30px 20px;
+    
+}
+
+
+.input,.word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section > *{
+    margin-bottom: 25px;
+}
+
+section > .fetchResult > *{
+    margin-bottom: 25px;
+}
+
+section .input button{
+    background-color: var(--bg-body);
+    padding: 10px 20px;
+    color: white;
+    border-radius:6px;
+}
+
+section .input input{
+    display: block;
+    width: 75%;
+    border-bottom: 3px solid var(--bg-body);
+}
+
+.word i {
+    color: var(--bg-body);
+}
+
+section > .fetchResult > h3{
+    background-color: var(--bg-section);
+    box-shadow: 1px 1px 3px rgb(226, 224, 224);
+    position: relative;
+}
+
+section > .fetchResult >  h3::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: var(--bg-body);
+    width: 4px;
+}
+
+section > .fetchResult > h3 > i{
+    margin-left: 20px;
+}
+
+.fetchResult > p > span{
+    margin-right: 10px;
+}
+
+.input input{
+    font-size: 2rem;
+}
